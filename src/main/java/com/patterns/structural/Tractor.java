@@ -12,6 +12,9 @@ public class Tractor {
             case 2:
                 this.speed = 15; // liebre
                 break;
+            default:
+                this.speed = 0;
+                break;
         }
     }
 
