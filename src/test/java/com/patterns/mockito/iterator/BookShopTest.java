@@ -56,9 +56,9 @@ class BookShopTest {
     public void addBookNull() {
 
         book = null;
-       // verify(bookShop).addBook(bookArgumentCaptor.capture());
+        verify(bookShop).addBook(bookArgumentCaptor.capture());
 
-        //assertEquals(null, bookArgumentCaptor.getValue());
+        assertEquals(null, bookArgumentCaptor.getValue());
 
     }
 
