@@ -1,5 +1,6 @@
 package mockito.iterator.iterator1;
 
+import config.Log4jPropertiesConfiguration;
 import org.junit.jupiter.api.Tag;
 
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class BookShop implements IBookShop {
 
     // metodo que devuelve el tamaño de la librería
     public int getSize() {
-        System.out.println("getSize(): " + books.size());
+        Log4jPropertiesConfiguration.logger.debug("getSize(): " + books.size());
         return books.size();
     }
 
