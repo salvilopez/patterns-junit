@@ -21,7 +21,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
     @Test
     @DisplayName("testDeviceContext")
-    public void testDeviceContext() {
+     void testDeviceContext() {
     deviceContext = new DeviceContext();
     assertNotNull(deviceContext);
     }
