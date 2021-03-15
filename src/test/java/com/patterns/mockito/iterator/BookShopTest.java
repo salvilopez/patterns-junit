@@ -37,7 +37,7 @@ class BookShopTest {
 
     @Test
     @DisplayName("addBook")
-    public void addBook() {
+     void addBook() {
 
         Book bookToAdd = new Book("5656435", "Hawkins", 2021 );
 
@@ -116,7 +116,7 @@ class BookShopTest {
 
     @Test
     @DisplayName("iteratorHasNext")
-    public void iteratorHasNext() {
+     void iteratorHasNext() {
 
 
 

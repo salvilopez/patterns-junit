@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("DeviceContextTest")
-public class DeviceContextTest {
+ class DeviceContextTest {
 
 @Test
 @DisplayName("the object type not Null")
@@ -40,7 +40,7 @@ void checkStatenotNull()  {
         State start = new OnState();
         stateContext.setDeviceState(start);
         stateContext.doAction();
-        assertNotEquals("",stateContext.getDeviceState());
+        assertNotSame("",stateContext.getDeviceState().toString());
     }
     @Test
     @DisplayName("getDeviceStateOffnotNull")
@@ -58,7 +58,7 @@ void checkStatenotNull()  {
         State stop = new OffState();
         stateContext.setDeviceState(stop);
         stateContext.doAction();
-        assertNotEquals("",stateContext.getDeviceState());
+        assertNotSame("",stateContext.getDeviceState().toString());
     }
     @Test
     @DisplayName("checkStateisON")

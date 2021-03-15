@@ -19,5 +19,5 @@ import org.junit.runner.RunWith;
 @SuiteDisplayName("Suite patrones")
 // @IncludeTags("database") // También se puede usar @ExcludeTags para el caso contrario
 // @SelectClasses(PaypalStrategyTest.class)
-public class SuiteTest {
+ class SuiteTest {
 }
