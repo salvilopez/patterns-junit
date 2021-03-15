@@ -17,12 +17,10 @@ public class Main {
 
         Shape rectangulo = new Rectangle();
         rectangulo.draw();
-        Log4jPropertiesConfiguration.logger.debug("===========================");
         Shape rectanguloDecorado = new BorderStyleDecorator(rectangulo, "solid");
         rectanguloDecorado.draw();
 
 
-        Log4jPropertiesConfiguration.logger.debug("===========================");
         Shape rectanguloDecoradoDecorado = new BorderThicknessDecorator(rectanguloDecorado, "2px");
         rectanguloDecoradoDecorado.draw();
 

@@ -21,13 +21,6 @@ public class Main {
         Log4jPropertiesConfiguration.logger.debug("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
         Log4jPropertiesConfiguration.logger.debug("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
 
-        Log4jPropertiesConfiguration.logger.debug("upperCase: HOLA, result: " + upperCaseCtx.validate("HOLA"));
-        Log4jPropertiesConfiguration.logger.debug("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
-        Log4jPropertiesConfiguration.logger.debug("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
-
-        Log4jPropertiesConfiguration.logger.debug("upperCase: HOLA, result: " + upperCaseCtx.validate("HOLA"));
-        Log4jPropertiesConfiguration.logger.debug("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
-        Log4jPropertiesConfiguration.logger.debug("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
 
     }
 }
