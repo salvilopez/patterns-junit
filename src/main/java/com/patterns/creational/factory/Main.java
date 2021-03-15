@@ -1,6 +1,7 @@
 package com.patterns.creational.factory;
 
 import com.patterns.creational.factory.error.FiguraNotFoundException;
+import config.Log4jPropertiesConfiguration;
 
 public class Main {
 
@@ -10,9 +11,8 @@ public class Main {
         Figura circulo = FiguraFactory.crearFigura("circulo");
         Figura rectangulo = FiguraFactory.crearFigura("rectangulo");
 
-        System.out.println(triangulo);
-        System.out.println(circulo);
-        System.out.println(rectangulo);
-
+        Log4jPropertiesConfiguration.logger.debug(triangulo);
+        Log4jPropertiesConfiguration.logger.debug(circulo);
+        Log4jPropertiesConfiguration.logger.debug(rectangulo);
     }
 }

@@ -32,7 +32,6 @@ public class Main {
         elon.tweet("BTC goes up!");
         donald.tweet("WhiteHouse is mine!");
 
-        System.out.println("==================0");
 
         // unsubscribe observers
         elon.removeSubscriber(bloomberg);

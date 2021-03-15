@@ -1,15 +1,18 @@
 package com.patterns.structural.decorator;
 
+import config.Log4jPropertiesConfiguration;
+
 public class Circle implements Shape{
 
     @Override
     public void draw() {
-        System.out.println("Drawing circle");
+        Log4jPropertiesConfiguration.logger.debug("Drawing circle");
+
     }
 
     @Override
     public void resize() {
-        System.out.println("Resizing circle");
+        Log4jPropertiesConfiguration.logger.debug("Resizing circle");
 
     }
 

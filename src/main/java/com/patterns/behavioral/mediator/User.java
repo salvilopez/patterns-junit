@@ -1,5 +1,7 @@
 package com.patterns.behavioral.mediator;
 
+import config.Log4jPropertiesConfiguration;
+
 public class User extends AbstractUser{
 
     public User(ChatMediator mediator, String name) {
@@ -12,7 +14,8 @@ public class User extends AbstractUser{
     }
 
     @Override
-    public void receive(String message) {
-        System.out.println(this.name + ": message received " + message);
+    public void receive(String message)
+    {
+        Log4jPropertiesConfiguration.logger.debug(this.name + ": message received " + message);
     }
 }

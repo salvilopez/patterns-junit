@@ -1,9 +1,11 @@
 package com.patterns.behavioral.state.state2;
 
+import config.Log4jPropertiesConfiguration;
+
 public class Off extends RemoteControl{
     @Override
     public void toggle(Device device) {
-        System.out.println("Turning ON the device.");
+        Log4jPropertiesConfiguration.logger.debug("Turn On the device");
         device.setState(new On());
     }
 }

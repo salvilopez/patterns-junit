@@ -1,5 +1,7 @@
 package com.patterns.structural.decorator;
 
+import config.Log4jPropertiesConfiguration;
+
 public class BorderStyleDecorator extends ShapeDecorator{
 
     private String style;
@@ -14,7 +16,7 @@ public class BorderStyleDecorator extends ShapeDecorator{
         // decoro antes
         this.decoratedShape.draw(); // funcionalidad original
         // decoro despues
-        System.out.println("Border style is:  " + this.style);
+        Log4jPropertiesConfiguration.logger.debug("Border style is:  " + this.style);
     }
 
     @Override

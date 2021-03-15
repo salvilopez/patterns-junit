@@ -37,6 +37,9 @@ public class BookShop implements Iterable<Book>{
 
         @Override
         public Book next() {
+
+
+
             return books.get(currentIndex++);
         }
     }

@@ -1,5 +1,6 @@
 package com.patterns.behavioral.iterator.iterator1;
 
+import config.Log4jPropertiesConfiguration;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -18,7 +19,7 @@ class BookShopTest {
         books.addBook(bookToAdd);
 
         Book lastBook = (Book) books.getOne(books.getSize());
-        System.out.println(lastBook.getIsbn() + bookToAdd.getIsbn());
+        Log4jPropertiesConfiguration.logger.debug(lastBook.getIsbn() + bookToAdd.getIsbn());
         assertEquals(lastBook.getIsbn(), bookToAdd.getIsbn());
 
     }
