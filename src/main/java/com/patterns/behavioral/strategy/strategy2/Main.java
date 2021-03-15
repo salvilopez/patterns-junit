@@ -17,17 +17,12 @@ public class Main {
         // pruebas
 
 
-        System.out.println("upperCase: HOLA, result: " + upperCaseCtx.validate("HOLA"));
-        System.out.println("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
-        System.out.println("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
+        Log4jPropertiesConfiguration.logger.debug("upperCase: HOLA, result: " + upperCaseCtx.validate("HOLA"));
+        Log4jPropertiesConfiguration.logger.debug("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
+        Log4jPropertiesConfiguration.logger.debug("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
 
-        System.out.println("upperCase: HOLA, result: " + upperCaseCtx.validate("HOLA"));
-        System.out.println("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
-        System.out.println("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
 
-        System.out.println("upperCase: HOLA, result: " + upperCaseCtx.validate("HOLA"));
-        System.out.println("lowerCase: HOLA, result: " + lowerCaseCtx.validate("HOLA"));
-        System.out.println("numeric: HOLA, result: " + numericCtx.validate("HOLA"));
+
 
     }
 }

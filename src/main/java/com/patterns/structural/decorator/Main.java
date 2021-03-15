@@ -1,6 +1,5 @@
 package com.patterns.structural.decorator;
 
-import config.Log4jPropertiesConfiguration;
 
 /**
  * Componente abstracta
