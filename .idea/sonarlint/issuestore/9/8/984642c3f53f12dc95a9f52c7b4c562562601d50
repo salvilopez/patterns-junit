@@ -1,0 +1,11 @@
+
+C
+java:S1481"-Remove this unused "usuario1" local variable.(Ø¡ê›
+R
+java:S1854"<Remove this useless assignment to local variable "usuario1".(Ø¡ê›
+R
+java:S1854
+"<Remove this useless assignment to local variable "usuario2".(‘Ö»Î
+C
+java:S1481
+"-Remove this unused "usuario2" local variable.(‘Ö»Î
