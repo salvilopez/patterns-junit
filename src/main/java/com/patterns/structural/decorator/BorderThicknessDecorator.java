@@ -1,5 +1,7 @@
 package com.patterns.structural.decorator;
 
+import config.Log4jPropertiesConfiguration;
+
 public class BorderThicknessDecorator extends ShapeDecorator{
 
     private String thickness;
@@ -14,7 +16,7 @@ public class BorderThicknessDecorator extends ShapeDecorator{
         // decoro antes
         this.decoratedShape.draw();
         // decoro despues
-        System.out.println("Border thickness is:  " + this.thickness);
+        Log4jPropertiesConfiguration.logger.debug("Border thickness is:  " + this.thickness);
     }
 
     @Override

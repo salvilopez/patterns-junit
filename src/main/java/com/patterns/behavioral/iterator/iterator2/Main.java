@@ -4,6 +4,7 @@ package com.patterns.behavioral.iterator.iterator2;
 import java.util.Iterator;
 
 import com.patterns.behavioral.iterator.iterator1.Book;
+import config.Log4jPropertiesConfiguration;
 
 public class Main {
 
@@ -22,12 +23,12 @@ public class Main {
         Iterator<Book> iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = iterador.next();
-            System.out.println(book);
+            Log4jPropertiesConfiguration.logger.debug(book);
         }
         System.out.println("============");
 
         for (Book book: books) {
-            System.out.println(book);
+            Log4jPropertiesConfiguration.logger.debug(book);
         }
     }
 }

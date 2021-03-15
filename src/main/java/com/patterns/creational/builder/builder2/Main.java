@@ -1,5 +1,7 @@
 package com.patterns.creational.builder.builder2;
 
+import config.Log4jPropertiesConfiguration;
+
 /**
  * Abstract Builder
  *      Concrete Builder 1
@@ -22,13 +24,14 @@ public class Main {
         cocina.setBuilder(yankeeBuilder);
         cocina.build();
         Hamburguesa yankee = cocina.getHamburguesa();
+        Log4jPropertiesConfiguration.logger.debug(yankee);
         System.out.println(yankee);
 
         cocina.setBuilder(cangreBuilder);
         cocina.build();
         Hamburguesa cangreburger = cocina.getHamburguesa();
+        Log4jPropertiesConfiguration.logger.debug(cangreburger);
 
-        System.out.println(cangreburger);
 
     }
 }

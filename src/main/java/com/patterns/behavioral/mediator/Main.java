@@ -13,7 +13,7 @@ public class Main {
         AbstractUser user4 = new User(chat, "Antonio");
 
         user1.send("Hola buenas!");
-        System.out.println("=============");
+
         user2.send("Hasta luego!");
     }
 

@@ -1,5 +1,7 @@
 package com.patterns.structural.decorator;
 
+import config.Log4jPropertiesConfiguration;
+
 /**
  * Componente abstracta
  * Componente concreto
@@ -15,13 +17,12 @@ public class Main {
 
         Shape rectangulo = new Rectangle();
         rectangulo.draw();
-
-        System.out.println("===========================");
+        Log4jPropertiesConfiguration.logger.debug("===========================");
         Shape rectanguloDecorado = new BorderStyleDecorator(rectangulo, "solid");
         rectanguloDecorado.draw();
 
 
-        System.out.println("===========================");
+        Log4jPropertiesConfiguration.logger.debug("===========================");
         Shape rectanguloDecoradoDecorado = new BorderThicknessDecorator(rectanguloDecorado, "2px");
         rectanguloDecoradoDecorado.draw();
 

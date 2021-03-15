@@ -1,5 +1,7 @@
 package com.patterns.behavioral.observer.observer1;
 
+import config.Log4jPropertiesConfiguration;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class Weather {
      * @param obs
      */
     public void addObserver(WeatherObserver obs){
-        System.out.println("Añadido obs");
+        Log4jPropertiesConfiguration.logger.debug("Añadido obs");
         this.observers.add(obs);
     }
 
@@ -29,7 +31,7 @@ public class Weather {
      * @param obs
      */
     public void removeObserver(WeatherObserver obs){
-        System.out.println("Añadido obs");
+        Log4jPropertiesConfiguration.logger.debug("Añadido obs");
         this.observers.remove(obs);
     }
 

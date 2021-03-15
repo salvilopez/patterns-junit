@@ -1,14 +1,17 @@
 package com.patterns.solid;
 
+import config.Log4jPropertiesConfiguration;
+
 public class Car implements ICar{
 
     @Override
     public void accelerate() {
-        System.out.println("accelerating the car");
+
+        Log4jPropertiesConfiguration.logger.debug("accelerating the car");
     }
 
     @Override
     public void stop() {
-        System.out.println("stopping the car");
+        Log4jPropertiesConfiguration.logger.debug("stopping the car");
     }
 }

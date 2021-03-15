@@ -1,5 +1,7 @@
 package com.patterns.behavioral.strategy.strategy1;
 
+import config.Log4jPropertiesConfiguration;
+
 public class CreditCardStrategy implements PaymentStrategy{
 
     private String name;
@@ -48,6 +50,7 @@ public class CreditCardStrategy implements PaymentStrategy{
 
     @Override
     public void pay(double amount) {
-        System.out.println(amount + " paid with credir card");
+
+        Log4jPropertiesConfiguration.logger.debug(amount + " paid with credir card");
     }
 }
