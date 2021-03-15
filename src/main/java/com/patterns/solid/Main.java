@@ -2,17 +2,17 @@ package com.patterns.solid;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidCarException {
 
         String carType = "electric";
 
         ICar car;
-        if ("car" == carType) {
+        if (carType.equals("car")) {
             car = new Car();
-        } else if ("electric" == carType) {
+        } else if (carType.equals("electric")) {
             car = new ElectricCar();
         }else{
-            throw new RuntimeException("Invalid car");
+            throw new InvalidCarException("Invalid car");
         }
         car.accelerate();
     }
