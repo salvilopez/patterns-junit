@@ -11,7 +11,7 @@ import com.patterns.behavioral.state.state2.On;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-public class State2Test {
+ class State2Test {
 
 
     @BeforeAll
