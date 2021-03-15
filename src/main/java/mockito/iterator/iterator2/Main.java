@@ -1,6 +1,7 @@
 package mockito.iterator.iterator2;
 
 
+import config.Log4jPropertiesConfiguration;
 import mockito.iterator.iterator1.Book;
 
 import java.util.Iterator;
@@ -22,12 +23,11 @@ public class Main {
         Iterator<Book> iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = iterador.next();
-            System.out.println(book);
+            Log4jPropertiesConfiguration.logger.debug(book);
         }
-        System.out.println("============");
-
+        Log4jPropertiesConfiguration.logger.debug("---------------");
         for (Book book: books) {
-            System.out.println(book);
+            Log4jPropertiesConfiguration.logger.debug(book);
         }
     }
 }
