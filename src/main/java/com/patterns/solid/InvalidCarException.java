@@ -1,6 +1,6 @@
 package com.patterns.solid;
 
 public class InvalidCarException extends Exception {
-    public InvalidCarException(String invalidcar) {
+    public InvalidCarException(String invalidCar) {
     }
 }
