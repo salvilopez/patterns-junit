@@ -1,15 +1,22 @@
 package com.patterns.mockito;
 
+import com.patterns.creational.singleton.threadsafe.DbConfiguration;
 import config.Log4jPropertiesConfiguration;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class SuiteTest {
 
+ DbConfiguration config1 = DbConfiguration.getDBConfiguration();
+ DbConfiguration config2 = DbConfiguration.getDBConfiguration();
+
  @Test
- @EnabledIfSystemProperty(named="os.arch", matches = "amd64")
- void runOnlyOnOsArch(){
-  Log4jPropertiesConfiguration.logger.debug("Java Oracle");
+ void getInstance() {
+  assertNotNull(config1);
+  assertSame(config1, config2);
+  assertEquals(config1, config2);
  }
 
 }
