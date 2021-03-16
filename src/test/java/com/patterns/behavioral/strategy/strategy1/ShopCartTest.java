@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @Test
 @DisplayName("shopcard")
-public void shopcard() {
+ void shopcard() {
     Car car= new Car();
     assertNotNull(car);
 

@@ -9,7 +9,7 @@ class MainTest {
 
 @Test
 @DisplayName("PruebaTest")
-public void pruebaTest() {
+ void pruebaTest() {
 
     Log4jPropertiesConfiguration.logger.debug("Test de prueba Creado");
 
