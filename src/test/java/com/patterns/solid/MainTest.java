@@ -1,13 +1,22 @@
 package com.patterns.solid;
 
+import config.Log4jPropertiesConfiguration;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.anyLong;
 class MainTest {
 
-   // @Test
+@Test
+@DisplayName("PruebaTest")
+public void pruebaTest() {
 
-//Cambio2
-// Cambio de carpeta
+    Log4jPropertiesConfiguration.logger.debug("Test de prueba Creado");
+
+    Car car= new Car();
+    assertNotNull(car);
+}
+
 
 
 
