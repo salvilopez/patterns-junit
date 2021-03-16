@@ -30,10 +30,7 @@ public class BookShop implements Iterable<Book>{
 
         @Override
         public boolean hasNext() {
-            if (this.currentIndex >= books.size())
-                return false;
-
-            return true;
+            return this.currentIndex >= books.size();
         }
 
         @Override

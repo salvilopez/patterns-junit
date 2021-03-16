@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
     @DisplayName("Clone")
     void testClone() throws CloneNotSupportedException{
         Circle circle =  new Circle("amarillo", 2.0);
-        Circle circleClonado = circle.clone();
+        Circle circleClonado = circle;
 
         assertNotEquals(circle, circleClonado);
 
