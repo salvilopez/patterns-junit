@@ -32,10 +32,7 @@ public class Circle extends Shape{
     }
 
 
-    @Override
-    public Circle clone() throws CloneNotSupportedException {
-        return (Circle) super.clone();
-    }
+
 
     @Override
     public String toString() {
