@@ -10,13 +10,6 @@ public class Circle extends Shape{
         this.radio = radio;
     }
 
-    public Circle() {
-    }
-
-    public Circle(double radio) {
-        this.radio = radio;
-    }
-
     public double getRadio() {
         return radio;
     }
@@ -32,7 +25,10 @@ public class Circle extends Shape{
     }
 
 
-
+    @Override
+    public Circle clone() throws CloneNotSupportedException {
+        return (Circle) super.clone();
+    }
 
     @Override
     public String toString() {
