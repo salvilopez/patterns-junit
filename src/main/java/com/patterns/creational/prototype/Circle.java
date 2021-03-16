@@ -25,11 +25,10 @@ public class Circle extends Shape{
     }
 
 
-    @Override
-    public Circle clone() throws CloneNotSupportedException {
-        return (Circle) super.clone();
+    public Circle(Circle cloneCircle) {
+        this.setRadio(cloneCircle.getRadio());
+        this.setColor(cloneCircle.getColor());
     }
-
     @Override
     public String toString() {
         return "Circle{" +
